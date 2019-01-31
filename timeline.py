@@ -346,8 +346,9 @@ tl = timeline.TimelineTex(
         'scale': scale.TimeScale(),
         # 'layerGap': 40,
         # 'initialWidth': 2000,
-        'initialHeight': 3200,
+        'initialHeight': 4000,
         'labelPadding': {'left': 0, 'right': 0, 'top': 0, 'bottom': 0},
+        'textFn': lambda x: f"{x['time'].strftime('%b %Y')} - {x['text']}",
     },
 )
 tl.export('python_versions.tex')

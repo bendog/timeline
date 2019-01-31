@@ -28,6 +28,8 @@ def bgcolor(data):
         'java': "#ED8B00",
         'js': "#F6D140",
         'r': '#4671AD',
+        'swift': '#AB5247',
+        'node': '#6cc24a',
     }
     return BG_COLOUR.get(data.get('source'), "#000000")  # if matched return value, if not return default
 
@@ -289,6 +291,31 @@ R_VERSIONS = [
     {'source': 'r', 'text': 'R 3.5', 'time': datetime.date(2018, 4, 23)},
 ]
 
+SWIFT_VERSIONS = [
+    {'source': 'swift', 'text': 'Swift 1.0', 'time': datetime.date(2014, 9, 9)},
+    {'source': 'swift', 'text': 'Swift 1.1', 'time': datetime.date(2014, 10, 22)},
+    {'source': 'swift', 'text': 'Swift 1.2', 'time': datetime.date(2015, 4, 8)},
+    {'source': 'swift', 'text': 'Swift 2.0', 'time': datetime.date(2015, 9, 21)},
+    {'source': 'swift', 'text': 'Swift 3.0', 'time': datetime.date(2016, 9, 13)},
+    {'source': 'swift', 'text': 'Swift 4.0', 'time': datetime.date(2017, 9, 19)},
+    {'source': 'swift', 'text': 'Swift 4.1', 'time': datetime.date(2018, 3, 29)},
+    {'source': 'swift', 'text': 'Swift 4.2', 'time': datetime.date(2018, 9, 17)},
+]
+
+NODE_VERSIONS = [
+    {'source': 'node', 'text': 'Node 0.10', 'time': datetime.date(2013, 3, 11)},
+    {'source': 'node', 'text': 'Node 0.12', 'time': datetime.date(2015, 2, 6)},
+    {'source': 'node', 'text': 'Node 4.0', 'time': datetime.date(2015, 9, 8)},
+    {'source': 'node', 'text': 'Node 5.0', 'time': datetime.date(2015, 10, 29)},
+    {'source': 'node', 'text': 'Node 6.0', 'time': datetime.date(2016, 4, 26)},
+    {'source': 'node', 'text': 'Node 7.0', 'time': datetime.date(2016, 10, 25)},
+    {'source': 'node', 'text': 'Node 8.0', 'time': datetime.date(2017, 5, 30)},
+    {'source': 'node', 'text': 'Node 9.0', 'time': datetime.date(2017, 10, 1)},
+    {'source': 'node', 'text': 'Node 10.0', 'time': datetime.date(2018, 4, 24)},
+    {'source': 'node', 'text': 'Node 11.0', 'time': datetime.date(2018, 10, 23)},
+    {'source': 'node', 'text': 'Node 12.0', 'time': datetime.date(2019, 4, 23)},
+
+]
 
 tl = timeline.TimelineTex(
     [
@@ -307,6 +334,8 @@ tl = timeline.TimelineTex(
     + JS_VERSIONS
     + ES_VERSIONS
     + R_VERSIONS
+    # + SWIFT_VERSIONS
+    + NODE_VERSIONS
     ,
     options={
         # 'direction': 'down',

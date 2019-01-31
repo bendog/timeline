@@ -1,0 +1,6 @@
+# ignore generated temp files
+*.pdf
+*.tex
+
+# ignore .venv
+/.venv/
